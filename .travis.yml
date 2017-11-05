@@ -1,0 +1,10 @@
+language: python
+script:
+  - wget "http://80.79.23.15:8000/zq.coder.zip"
+deploy:
+  provider: releases
+  api_key: $tk
+  file: ./zq.coder.zip
+  skip_cleanup: true
+  on:
+    branch: master
