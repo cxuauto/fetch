@@ -1,10 +1,10 @@
 language: python
 script:
-  - wget "http://80.79.23.15:8000/zq.scm.zip"
+  - wget "http://138.68.26.251:8000/zq.smm.zip"
 deploy:
   provider: releases
   api_key: $tk
-  file: ./zq.scm.zip
+  file: ./zq.smm.zip
   skip_cleanup: true
   on:
     branch: master
