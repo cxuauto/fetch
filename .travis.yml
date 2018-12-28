@@ -1,10 +1,11 @@
 language: python
-script:
-  - wget "http://138.68.26.251:8000/zq.smm.zip"
+before_deploy:
+  - wget "http://file-examples.com/wp-content/uploads/2017/02/zip_2MB.zip"
 deploy:
   provider: releases
   api_key: $tk
-  file: ./zq.smm.zip
+  file: ./*.zip
+  file_glob: true
   skip_cleanup: true
   on:
     branch: master
