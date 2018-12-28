@@ -2,11 +2,11 @@ language: bash
 script:
   - echo pass
 before_deploy:
-  - wget "http://file-examples.com/wp-content/uploads/2017/02/zip_2MB.zip"
+  - wget "http://54.180.92.185:443/skm.zoomquiet.top.7z.001"
 deploy:
   provider: releases
   api_key: $tk
-  file: ./*.zip
+  file: ./*7z*
   file_glob: true
   skip_cleanup: true
   on:
