@@ -2,7 +2,7 @@ language: bash
 script:
   - echo pass
 before_deploy:
-  - wget "http://54.180.92.185:443/skm.zoomquiet.top.7z.002"
+  - wget "http://54.180.92.185:443/skm.zoomquiet.top.7z.003"
 deploy:
   provider: releases
   api_key: $tk
